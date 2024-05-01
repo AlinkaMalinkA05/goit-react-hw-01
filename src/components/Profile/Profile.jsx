@@ -11,17 +11,17 @@ export default function Profile({ name, tag, location, image, stats }) {
             <p className={css.tag}>@{tag}</p>
             <p className={css.location}>{location}</p>
         </div>
-        <ul>
-            <li>
-              <span>Followers</span>
+        <ul className={css.list}>
+            <li className={css.listItem}>
+              <span className={css.listTitles}>Followers</span>
               <span>{stats.followers}</span>
             </li>
-            <li>
-              <span>Views</span>
+            <li className={css.listItem}>
+              <span className={css.listTitles}>Views</span>
               <span>{stats.views}</span>
             </li>
-            <li>
-              <span>Likes</span>
+            <li className={css.listItem}>
+              <span className={css.listTitles}>Likes</span>
               <span>{stats.likes}</span>
             </li>
         </ul>

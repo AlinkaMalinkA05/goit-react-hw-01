@@ -3,13 +3,20 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
 }
 .wrapper {
   display: flex;
+  margin-top: 15px;
+  gap: 20px;
   flex-direction: column;
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+}
+p {
+  margin: 0px;
 }
 .image {
   border-radius: 50%;
@@ -21,13 +28,52 @@
 .name {
   font-weight: 900;
   font-size: 24px;
-  margin-bottom: 8px;
+  margin-top: 0px;
 }
 .tag {
   color: gray;
-  font-size: 16px;
+  margin: 0;
+  font-size: 20px;
 }
 .location {
+  font-weight: 900;
+  font-size: 20px;
   color: gray;
-  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(120, 112, 112);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top: 2px solid rgb(53, 53, 53);
+}
+.listItem {
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid rgb(53, 53, 53);
+}
+.listTitles {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.list.listItem :nth-child(n + 3) {
+  border-right: none;
+}
+.list .listItem:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.list .listItem:last-child {
+  border-bottom-right-radius: 12px;
 }
