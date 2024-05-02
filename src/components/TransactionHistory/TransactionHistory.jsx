@@ -1,8 +1,9 @@
-export default function TransactionHistory({items}) {
+import css from "/src/components/TransactionHistory/TransactionHistory.module.css"
+export default function TransactionHistory({ items }) {
     return (
-        <table>
+        <table className={css.tableWrapper}>
   <thead>
-    <tr>
+    <tr className={css.tableHeader}>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>
