@@ -6,3 +6,8 @@
   width: 500px;
   justify-content: space-between;
 }
+li {
+  border: 2px solid black;
+  border-radius: 6px;
+  width: auto;
+}
