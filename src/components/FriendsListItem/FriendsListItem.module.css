@@ -9,3 +9,13 @@
   font-size: 24px;
   font-weight: 600;
 }
+.status {
+  font-size: 18px;
+  margin: 0;
+}
+.online {
+  color: green;
+}
+.offline {
+  color: red;
+}
